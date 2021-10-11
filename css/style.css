@@ -43,16 +43,18 @@ body {
 }
 
 /* label img */
+/* FIX POSITION WITH RELATIVE */
 .label-img {
-  position: absolute;
+  position: relative;
   left: 48%;
-  top: 10%;
+  top: 5%;
   transform: translate(-50%, -50%);
+  width: 120px;
 }
 
 /* Front__info */
 .front__info {
-  margin-top: 250px;
+  margin-top: 100px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   display: flex;
@@ -74,6 +76,7 @@ body {
 }
 
 .cook-first-name {
+  margin-top: 40px;
   letter-spacing: 0.5em;
   text-transform: uppercase;
 }
@@ -84,10 +87,54 @@ body {
   margin: 20px;
 }
 
+.front__cook-separator {
+  margin: 30px auto;
+  text-align: center;
+  width: 100px;
+  border: 3px solid #e8c300;
+  border-radius: 3px;
+}
+
+.front__cook-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+
+/* Get also :HOOVER */
+.front__cook-buttons a {
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: #f0f8ff;
+}
+
+/* Go on! */
+.front__cook-button-left,
+.front__cook-button-right {
+  width: 200px;
+  height: 60px;
+  margin: 20px;
+}
+
+.front__cook-button-left {
+  background-color: #e8c300;
+  border-radius: 5px;
+}
+.front__cook-button-right {
+  border: 1px solid rgba(236, 198, 198, 0.8);
+}
+
 .front__socials {
   margin: 20px;
 }
 
 .front__socials div {
   margin: 60px;
+}
+
+.skip-button {
+  position: relative;
+  left: 43.5%;
 }
