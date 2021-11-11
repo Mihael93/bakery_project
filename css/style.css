@@ -138,3 +138,126 @@ body {
   position: relative;
   left: 43.5%;
 }
+
+/* About us section */
+
+.about-us {
+  max-height: 800px;
+  background-color: #ebebebbb;
+  /* margin: 5% 0; */
+}
+
+.about-us__section {
+  text-align: center;
+  max-height: 475px;
+  padding: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.about-us__info {
+  max-height: 250px;
+  max-width: 600px;
+}
+
+.about-us__info h2 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 2em;
+  margin: 0;
+}
+
+.about-us__separator {
+  margin: 15px auto;
+  text-align: center;
+  width: 50px;
+  border: 2px solid #e8c300;
+  border-radius: 2px;
+}
+
+.about-us__headline {
+  font-weight: 600;
+  font-size: 1.2em;
+  margin-bottom: 5%;
+}
+
+.about-us__img {
+  margin: 5%;
+  max-height: 400px;
+  max-width: 400px;
+  height: 80%;
+  box-shadow: 5px 5px 10px 10px rgba(179, 155, 155, 0.753);
+  /* filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5)); */
+}
+
+/* OUR TEAM */
+
+.team {
+  max-height: 800px;
+  background-image: url(../img/team-background.jpg);
+  /* margin: 5% 0; */
+  color: #ffffff;
+}
+
+.team > h3 {
+  margin: 0;
+  padding: 3% 0 0 0;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.2em;
+  line-height: 1.2em;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 0.3em;
+}
+
+.team__section {
+  text-align: center;
+  /* max-height: 475px; */
+  padding: 0 3% 3% 3%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.team__info {
+  max-height: 250px;
+  max-width: 600px;
+}
+
+.team__info h2 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 2em;
+  margin: 0;
+}
+
+.team__separator {
+  margin: 15px auto;
+  text-align: center;
+  width: 50px;
+  border: 2px solid #e8c300;
+  border-radius: 2px;
+}
+
+.team__headline {
+  font-weight: 600;
+  font-size: 1.2em;
+  margin-bottom: 5%;
+}
+
+.team__img {
+  margin: 5%;
+  max-height: 400px;
+  max-width: 400px;
+  height: 80%;
+  box-shadow: 5px 5px 10px 10px rgba(179, 155, 155, 0.753);
+  /* filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5)); */
+}
