@@ -112,8 +112,94 @@
          </div>
       </div>
    </div>
+   <!-- BOOK A CANDIE -->
+   <div class="book-candie">
+      <div class="book-candie__section">
+         <div class="book-candie__info">
+            <h2>Book a candie</h2>
+            <hr class="book-candie__separator">
+            <form action="post" class="book-candie__form">
+               <div class="form__left">
+                  <div><input type="text" name="name" id="form-name-id" placeholder="Enter your name" maxlength="20">
+                  </div>
+                  <div><input type="tel" name="phone" id="form-phone-id" placeholder="Enter phone number"
+                        maxlength="20">
+                  </div>
+               </div>
+               <div class="form__right">
+                  <div><input type="email" name="email" id="form-email-id" placeholder="Enter youremail" maxlength="40">
+                  </div>
+                  <div><select name="candies" id="form-list-id">
+                        <optgroup label="Cakes assortie">
+                           <option value="k1">Chocolate cake</option>
+                           <option value="k2">Pumpking cake</option>
+                           <option value="k3">Barries cake</option>
+                        </optgroup>
+                        <optgroup label="Sweets">
+                           <option value="s1">Cookies</option>
+                           <option value="s2">Nuggets</option>
+                           <option value="s3">Sugar rush</option>
+                        </optgroup>
+
+                     </select>
+                  </div>
+               </div>
+               <div class="form__button">
+                  <input type="button" value="Book now">
+               </div>
+            </form>
+         </div>
+         <img class="book-candie__img" src="./img/book-candie.jpg" alt="book-candie" srcset="">
+
+      </div>
+   </div>
+   <!-- CAROUSEL CONTAINER -->
+   <div class="carousel-container-box">
+      <span class="carousel__specials">Specialities</span>
+      <div class="carousel-container">
+         <!-- Full-width images with number and caption text -->
+         <div class="carousel__slide carousel__fade">
+            <div class="slide__number">1 / 4</div>
+            <div class="slide__container">
+               <img src="./img/carousel/carousel_img_1.jpg" class="slide__img">
+               <div class="slide__text">Caption One</div>
+            </div>
+         </div>
+
+         <div class="carousel__slide carousel__fade">
+            <div class="slide__number">2 / 4</div>
+            <img src="./img/carousel/carousel_img_2.jpg" class="slide__img">
+            <div class="slide__text">Caption Two</div>
+         </div>
+
+         <div class="carousel__slide carousel__fade">
+            <div class="slide__number">3 / 4</div>
+            <img src="./img/carousel/carousel_img_3.jpg" class="slide__img">
+            <div class="slide__text">Caption Three</div>
+         </div>
+
+         <div class="carousel__slide carousel__fade">
+            <div class="slide__number">4 / 4</div>
+            <img src="./img/carousel/carousel_img_4.jpg" class="slide__img">
+            <div class="slide__text">Caption Thour</div>
+         </div>
+
+         <!-- Next and previous buttons -->
+         <a class="carousel__prev" onclick="plusSlides(-1)">&#10094;</a>
+         <a class="carousel__next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      <!-- The dots/circles -->
+      <div class="carousel__dots">
+         <span class="carousel__dot" onclick="currentSlide(1)"></span>
+         <span class="carousel__dot" onclick="currentSlide(2)"></span>
+         <span class="carousel__dot" onclick="currentSlide(3)"></span>
+         <span class="carousel__dot" onclick="currentSlide(4)"></span>
+      </div>
+   </div>
 
    <script src="./js/index.js"></script>
+   <script src="./js/carousel.js"></script>
 </body>
 
 </html>

@@ -261,3 +261,190 @@ body {
   box-shadow: 5px 5px 10px 10px rgba(179, 155, 155, 0.753);
   /* filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5)); */
 }
+
+/* BOOK A CANDIE */
+
+.book-candie {
+  max-height: 800px;
+  background-color: #ebebebbb;
+  /* margin: 5% 0; */
+}
+
+.book-candie__section {
+  text-align: center;
+  max-height: 475px;
+  padding: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.book-candie__info {
+  max-height: 250px;
+  max-width: 600px;
+}
+
+.book-candie__info h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 2em;
+  margin: 0;
+}
+
+.book-candie__separator {
+  margin: 15px auto;
+  text-align: center;
+  width: 50px;
+  border: 2px solid #e8c300;
+  border-radius: 2px;
+}
+
+.book-candie__form {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+/* .form__left {
+}
+.form__right {
+} */
+.book-candie__img {
+  margin: 5%;
+  max-height: 400px;
+  max-width: 400px;
+  height: 80%;
+  box-shadow: 5px 5px 10px 10px rgba(179, 155, 155, 0.753);
+  /* filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5)); */
+}
+
+/* CAROUSEL PRODUCTS */
+/* Slideshow container */
+.carousel-container-box {
+  max-width: 1440px;
+  max-height:800px;
+  background-image: url(../img/team-background.jpg);
+  padding-bottom: 2%;
+}
+
+.carousel-container {
+  max-width: 1200px; /*Deal with it ?*/
+  position: relative;
+  margin: auto;
+  background-color: rgba(150, 150, 150, 0.75);
+}
+
+.carousel__specials {
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  padding: 3% 0 3% 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+
+/* Hide the images by default */
+.carousel__slide {
+  display: none;
+}
+
+.slide__number {
+  color: #f2f2f2;
+  font-size: 0.75em;
+  padding: 1% 1.5%;
+  position: absolute;
+  top: 0;
+}
+
+.slide__img {
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+  max-height: 600px;
+}
+
+.slide__text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.carousel__prev,
+.carousel__next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.carousel__next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.carousel__prev:hover,
+.carousel__next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel__dots {
+  text-align: center;
+}
+
+.carousel__dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.carousel__dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.carousel__fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes carousel__fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes carousel__fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
