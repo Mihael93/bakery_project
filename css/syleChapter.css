@@ -1,0 +1,135 @@
+.menu-wrapper {
+   max-width: 1280px;
+   /* max-height: 720px; */
+   margin: 0 auto;
+   /* border: 1px solid darkblue; */
+   background-color: #ebebebbb;
+}
+
+.menu-wrapper-title {
+   max-width: 600px;
+   margin: 0 auto;
+   padding-top: 3%;
+   text-align: center;
+}
+
+@media all and (max-width: 1025px) {
+   .menu-wrapper-title {
+      max-width: 450px;
+   }
+}
+
+@media all and (max-width: 769px) {
+   .menu-wrapper-title {
+      max-width: 400px;
+   }
+}
+
+@media all and (max-width: 426px) {
+   .menu-wrapper-title {
+      max-width: 300px;
+   }
+}
+
+.menu-wrapper-title > h2 {
+   font-family: sans-serif; /*Banny!*/
+   text-transform: uppercase;
+   font-style: italic;
+   font-size: 2em;
+   letter-spacing: 2px;
+   margin: 0;
+}
+
+@media all and (max-width: 1025px) {
+   .menu-wrapper-title > h2 {
+      font-size: 1.5em;
+      letter-spacing: 1.5px;
+   }
+}
+
+@media all and (max-width: 769px) {
+   .menu-wrapper-title > h2 {
+      font-size: 1.25em;
+      letter-spacing: 1px;
+   }
+}
+
+@media all and (max-width: 426px) {
+   .menu-wrapper-title > h2 {
+      font-size: 1em;
+      letter-spacing: 0.75px;
+   }
+}
+
+.separator {
+   margin: 15px auto;
+   text-align: center;
+   width: 50px;
+   border: 2px solid #e8c300;
+   border-radius: 2px;
+}
+
+.menu-wrapper-info {
+   font-family: sans-serif;
+   font-weight: 600;
+   font-size: 1.25em;
+   max-height: 50px;
+   overflow: auto;
+   margin-bottom: 0;
+}
+
+@media all and (max-width: 1025px) {
+   .menu-wrapper-info {
+      font-size: 1em;
+      max-height: 40px;
+   }
+}
+
+@media all and (max-width: 426px) {
+   .menu-wrapper-info {
+      font-size: 0.75em;
+      max-height: 30px;
+   }
+}
+
+.menu-wrapper__main {
+   padding: 5%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.menu-wrapper__section {
+   max-width: 28%;
+}
+
+.menu-wrapper__section__general {
+   margin: 5% auto;
+   padding: 5%;
+}
+
+.menu-wrapper__section__product {
+   display: block;
+   text-transform: uppercase;
+   font-family: sans-serif; /*Change!*/
+   font-size: 1.2em;
+   font-weight: 600;
+}
+
+@media all and (max-width: 1025px) {
+   .menu-wrapper__section__product {
+      font-size: 1em;
+   }
+}
+
+@media all and (max-width: 426px) {
+   .menu-wrapper__section__product {
+      font-size: 0.75em;
+      text-align: center;
+      color: darkblue;
+   }
+}
+
+.menu-wrapper__section__product-description {
+   color: rgb(130, 130, 130);
+   font-family: Arial, Helvetica, sans-serif;
+}

@@ -1,17 +1,23 @@
 body {
   max-width: 1440px;
   min-width: 375px;
+  margin: 0 auto;
 }
 
+
 /* Front page */
+
 .front-page {
   background-image: url(../img/front-page.jpg);
   height: 800px;
 }
 
+
 /* Navigation */
+
 .front__nav {
-  font-size: 18px; /* Разобраться с адаптивным размером */
+  font-size: 18px;
+  /* Разобраться с адаптивным размером */
   font-family: sans-serif;
   font-weight: 500;
   background-color: rgb(56, 50, 50);
@@ -20,13 +26,15 @@ body {
   justify-content: space-around;
 }
 
+
 /* Пояснить зачем это?! */
+
 .front__nav :after {
   content: "";
   clear: both;
 }
 
-.front__nav > ul {
+.front__nav>ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -42,8 +50,12 @@ body {
   color: #f0f8ff;
 }
 
+
 /* label img */
+
+
 /* FIX POSITION WITH RELATIVE */
+
 .label-img {
   position: relative;
   left: 48%;
@@ -52,14 +64,16 @@ body {
   width: 120px;
 }
 
+
 /* Front__info */
+
 .front__info {
   margin-top: 100px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   display: flex;
   justify-content: space-between;
 }
+
 .front__work-time {
   color: #ffffff;
   writing-mode: tb-rl;
@@ -103,14 +117,18 @@ body {
   text-transform: uppercase;
 }
 
+
 /* Get also :HOOVER */
+
 .front__cook-buttons a {
   text-decoration: none;
   letter-spacing: 1px;
   color: #f0f8ff;
 }
 
+
 /* Go on! */
+
 .front__cook-button-left,
 .front__cook-button-right {
   width: 200px;
@@ -122,6 +140,7 @@ body {
   background-color: #e8c300;
   border-radius: 5px;
 }
+
 .front__cook-button-right {
   border: 1px solid rgba(236, 198, 198, 0.8);
 }
@@ -138,6 +157,7 @@ body {
   position: relative;
   left: 43.5%;
 }
+
 
 /* About us section */
 
@@ -193,6 +213,7 @@ body {
   /* filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5)); */
 }
 
+
 /* OUR TEAM */
 
 .team {
@@ -202,7 +223,7 @@ body {
   color: #ffffff;
 }
 
-.team > h3 {
+.team>h3 {
   margin: 0;
   padding: 3% 0 0 0;
   font-family: sans-serif;
@@ -262,6 +283,7 @@ body {
   /* filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5)); */
 }
 
+
 /* BOOK A CANDIE */
 
 .book-candie {
@@ -308,10 +330,13 @@ body {
   align-items: center;
   align-content: center;
 }
+
+
 /* .form__left {
 }
 .form__right {
 } */
+
 .book-candie__img {
   margin: 5%;
   max-height: 400px;
@@ -321,20 +346,25 @@ body {
   /* filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5)); */
 }
 
+
 /* CAROUSEL PRODUCTS */
+
+
 /* Slideshow container */
+
 .carousel-container-box {
   max-width: 1440px;
-  max-height:800px;
+  max-height: 800px;
   background-image: url(../img/team-background.jpg);
   padding-bottom: 2%;
 }
 
 .carousel-container {
-  max-width: 1200px; /*Deal with it ?*/
+  max-width: 1200px;
+  /*Deal with it ?*/
+  max-height: 600px;
   position: relative;
-  margin: auto;
-  background-color: rgba(150, 150, 150, 0.75);
+  margin: 0 auto;
 }
 
 .carousel__specials {
@@ -344,39 +374,94 @@ body {
   padding: 3% 0 3% 0;
   text-transform: uppercase;
   letter-spacing: 0.5em;
+  font-family: sans-serif;
 }
+
 
 /* Hide the images by default */
+
 .carousel__slide {
   display: none;
+  max-height: auto;
+  height: 100%;
 }
 
-.slide__number {
+.carousel__slide__number {
   color: #f2f2f2;
   font-size: 0.75em;
-  padding: 1% 1.5%;
+  padding: 2% 1.5%;
   position: absolute;
-  top: 0;
 }
 
-.slide__img {
+.carousel__slide__img {
   width: 100%;
-  height: 100%;
-  max-width: 800px;
+  max-width: 1200px;
   max-height: 600px;
+  /*Chek this dimension with designer*/
 }
 
-.slide__text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
+.carousel__slide__text {
+  font-size: 1.5em;
+  /* padding: 1% 2%; */
   position: absolute;
-  bottom: 8px;
+  bottom: 5%;
   width: 100%;
   text-align: center;
+  
+  cursor: pointer;
+  text-shadow: -1px -1px #FFF,
+               -2px -2px #FFF,
+               -1px 1px #FFF,
+               -2px 2px #FFF,
+               1px 1px #FFF,
+               2px 2px #FFF,
+               1px -1px #FFF,
+               2px -2px #FFF,
+               -3px -3px 2px #BBB,
+               -3px 3px 2px #BBB,
+               3px 3px 2px #BBB,
+               3px -3px 2px #BBB;
+  color: steelblue;
+  transition: all 1s;
 }
 
+@media all and (max-width: 1200px) {
+  .carousel__slide__text{
+    bottom: 10%;
+  }
+}
+
+@media all and (max-width: 769px) {
+  .carousel__slide__text{
+    bottom: 15%;
+  }
+}
+
+@media all and (max-width: 426px) {
+  .carousel__slide__text{
+    bottom: 20%;
+  }
+}
+
+.carousel__slide__text:hover {
+  color: yellowgreen;
+}
+
+/* Need to make description of carousel names of slides */
+/* .carousel__slide__description {
+  color: steelblue;
+  font-size: 1em;
+  position: absolute;
+  bottom: 45px;
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+} */
+
+
 /* Next & previous buttons */
+
 .carousel__prev,
 .carousel__next {
   cursor: pointer;
@@ -423,7 +508,9 @@ body {
   background-color: #717171;
 }
 
+
 /* Fading animation */
+
 .carousel__fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 2s;
@@ -447,4 +534,136 @@ body {
   to {
     opacity: 1;
   }
+}
+
+.menu-wrapper {
+   background-color: #ebebebbb;
+}
+
+.menu-wrapper-title {
+   max-width: 600px;
+   margin: 0 auto;
+   padding-top: 5%;
+   text-align: center;
+}
+
+@media all and (max-width: 1025px) {
+   .menu-wrapper-title {
+      max-width: 450px;
+   }
+}
+
+@media all and (max-width: 769px) {
+   .menu-wrapper-title {
+      max-width: 400px;
+   }
+}
+
+@media all and (max-width: 426px) {
+   .menu-wrapper-title {
+      max-width: 300px;
+   }
+}
+
+.menu-wrapper-title > h2 {
+   font-family: sans-serif; /*Banny!*/
+   text-transform: uppercase;
+   font-style: italic;
+   font-size: 2em;
+   letter-spacing: 2px;
+   margin: 0;
+}
+
+@media all and (max-width: 1025px) {
+   .menu-wrapper-title > h2 {
+      font-size: 1.5em;
+      letter-spacing: 1.5px;
+   }
+}
+
+@media all and (max-width: 769px) {
+   .menu-wrapper-title > h2 {
+      font-size: 1.25em;
+      letter-spacing: 1px;
+   }
+}
+
+@media all and (max-width: 426px) {
+   .menu-wrapper-title > h2 {
+      font-size: 1em;
+      letter-spacing: 0.75px;
+   }
+}
+
+.separator {
+   margin: 15px auto;
+   text-align: center;
+   width: 50px;
+   border: 2px solid #e8c300;
+   border-radius: 2px;
+}
+
+.menu-wrapper-info {
+   font-family: sans-serif;
+   font-weight: 600;
+   font-size: 1.25em;
+   max-height: 50px;
+   overflow: auto;
+   margin-bottom: 0;
+}
+
+@media all and (max-width: 1025px) {
+   .menu-wrapper-info {
+      font-size: 1em;
+      max-height: 40px;
+   }
+}
+
+@media all and (max-width: 426px) {
+   .menu-wrapper-info {
+      font-size: 0.75em;
+      max-height: 30px;
+   }
+}
+
+.menu-wrapper__main {
+   padding: 3%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.menu-wrapper__section {
+   max-width: 28%;
+}
+
+.menu-wrapper__section__general {
+   margin: 5% auto;
+   padding: 5%;
+}
+
+.menu-wrapper__section__product {
+   display: block;
+   text-transform: uppercase;
+   font-family: sans-serif; /*Change!*/
+   font-size: 1.2em;
+   font-weight: 600;
+}
+
+@media all and (max-width: 1025px) {
+   .menu-wrapper__section__product {
+      font-size: 1em;
+   }
+}
+
+@media all and (max-width: 426px) {
+   .menu-wrapper__section__product {
+      font-size: 0.75em;
+      text-align: center;
+      color: darkblue;
+   }
+}
+
+.menu-wrapper__section__product-description {
+   color: rgb(130, 130, 130);
+   font-family: Arial, Helvetica, sans-serif;
 }
