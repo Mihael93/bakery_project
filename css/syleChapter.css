@@ -1,135 +1,142 @@
-.menu-wrapper {
-   max-width: 1280px;
-   /* max-height: 720px; */
+.gallery-fun {
+   max-width: 1440px;
    margin: 0 auto;
-   /* border: 1px solid darkblue; */
-   background-color: #ebebebbb;
+   background-image: url(../img/team-background.jpg);
+   color: #ffffff;
 }
 
-.menu-wrapper-title {
-   max-width: 600px;
+.gallery-fun__wrapper {
+   max-width: 1200px;
    margin: 0 auto;
-   padding-top: 3%;
-   text-align: center;
-}
-
-@media all and (max-width: 1025px) {
-   .menu-wrapper-title {
-      max-width: 450px;
-   }
-}
-
-@media all and (max-width: 769px) {
-   .menu-wrapper-title {
-      max-width: 400px;
-   }
-}
-
-@media all and (max-width: 426px) {
-   .menu-wrapper-title {
-      max-width: 300px;
-   }
-}
-
-.menu-wrapper-title > h2 {
-   font-family: sans-serif; /*Banny!*/
-   text-transform: uppercase;
-   font-style: italic;
-   font-size: 2em;
-   letter-spacing: 2px;
-   margin: 0;
-}
-
-@media all and (max-width: 1025px) {
-   .menu-wrapper-title > h2 {
-      font-size: 1.5em;
-      letter-spacing: 1.5px;
-   }
-}
-
-@media all and (max-width: 769px) {
-   .menu-wrapper-title > h2 {
-      font-size: 1.25em;
-      letter-spacing: 1px;
-   }
-}
-
-@media all and (max-width: 426px) {
-   .menu-wrapper-title > h2 {
-      font-size: 1em;
-      letter-spacing: 0.75px;
-   }
-}
-
-.separator {
-   margin: 15px auto;
-   text-align: center;
-   width: 50px;
-   border: 2px solid #e8c300;
-   border-radius: 2px;
-}
-
-.menu-wrapper-info {
-   font-family: sans-serif;
-   font-weight: 600;
-   font-size: 1.25em;
-   max-height: 50px;
-   overflow: auto;
-   margin-bottom: 0;
-}
-
-@media all and (max-width: 1025px) {
-   .menu-wrapper-info {
-      font-size: 1em;
-      max-height: 40px;
-   }
-}
-
-@media all and (max-width: 426px) {
-   .menu-wrapper-info {
-      font-size: 0.75em;
-      max-height: 30px;
-   }
-}
-
-.menu-wrapper__main {
    padding: 5%;
+}
+
+.gallery-fun__block {
    display: flex;
    justify-content: space-between;
+   margin-bottom: 10px;
+   overflow: hidden;
+   max-height: 610px;
 }
 
-.menu-wrapper__section {
-   max-width: 28%;
-}
-
-.menu-wrapper__section__general {
-   margin: 5% auto;
-   padding: 5%;
-}
-
-.menu-wrapper__section__product {
-   display: block;
-   text-transform: uppercase;
-   font-family: sans-serif; /*Change!*/
-   font-size: 1.2em;
-   font-weight: 600;
-}
-
-@media all and (max-width: 1025px) {
-   .menu-wrapper__section__product {
-      font-size: 1em;
+@media all and (max-width: 560px) {
+   .gallery-fun__block {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 5px;
+      max-height: none;
    }
 }
 
-@media all and (max-width: 426px) {
-   .menu-wrapper__section__product {
-      font-size: 0.75em;
-      text-align: center;
-      color: darkblue;
+.gallery-fun__block-1 {
+   margin-right: 10px;
+   width: 65%;
+   overflow: hidden;
+}
+
+@media all and (max-width: 560px) {
+   .gallery-fun__block-1 {
+      width: 100%;
+      margin: 0;
    }
 }
 
-.menu-wrapper__section__product-description {
-   color: rgb(130, 130, 130);
-   font-family: Arial, Helvetica, sans-serif;
+.block-1__top {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 10px;
+   position: relative;
+   overflow: hidden;
+}
+
+.gallery-fun__block__img-1 {
+   width: 100%;
+   max-width: 49%;
+   max-height: 300px;
+   object-fit: cover;
+}
+
+@media all and (max-width: 560px) {
+   .block-1__top {
+      width: 100%;
+      flex-wrap: wrap;
+      margin-bottom: 5px;
+   }
+}
+
+@media all and (max-width: 560px) {
+   .gallery-fun__block__img-1 {
+      max-width: none;
+      max-height: 180px;
+   }
+   .gallery-fun__block__img-1-first {
+      margin-bottom: 5px;
+   }
+}
+
+@media all and (max-width: 360px) {
+   .gallery-fun__block__img-1 {
+      max-height: 160px;   
+   }
+}
+
+.block-1__bot {
+   padding: 0 0 50% 0;
+   position: relative;
+   overflow: hidden;
+   max-height: 300px;
+}
+
+@media all and (max-width: 560px) {
+   .block-1__bot {
+      margin-bottom: 5px;
+   }
+}
+
+.gallery-fun__block__img-2 {
+   width: 100%;
+   height: 100%;
+   max-height: 300px;
+   object-fit: cover;
+   position: absolute;
+}
+
+.gallery-fun__block-2 {
+   width: 35%;
+   overflow: hidden;
+   position: relative;
+}
+
+@media all and (max-width: 560px) {
+   .gallery-fun__block-2 {
+      padding: 0 0 50% 0;
+      width: 100%;
+   }
+}
+
+.gallery-fun__block__img-3 {
+   width: 100%;
+   height: 100%;
+   max-height: 610px;
+   object-fit: cover;
+   position: absolute;
+}
+
+.gallery-fun__block-footer {
+   max-height: 400px;
+}
+
+.gallery-fun__block-3 {
+   padding: 0 0 50% 0;
+   max-height: 400px;
+   overflow: hidden;
+   position: relative;
+}
+
+.gallery-fun__block__img-4 {
+   width: 100%;
+   height: 100%;
+   max-height: 400px;
+   object-fit: cover;
+   position: absolute;
 }
