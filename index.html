@@ -105,39 +105,29 @@
    <!-- BOOK A CANDIE -->
    <div class="book-candie">
       <div class="book-candie__section">
-         <div class="book-candie__info">
-            <h2>Book a candie</h2>
-            <hr class="book-candie__separator">
-            <form action="post" class="book-candie__form">
-               <div class="form__left">
-                  <div><input type="text" name="name" id="form-name-id" placeholder="Enter your name" maxlength="20">
-                  </div>
-                  <div><input type="tel" name="phone" id="form-phone-id" placeholder="Enter phone number"
-                        maxlength="20">
-                  </div>
+         <div class="form-form">
+            <!-- <div class="form-general"> -->
+            <form class="form__container" name="form-book" action="#">
+               <span>Fast book</span>
+               <hr class="book-candie__separator">
+               <div class="form__input-block">
+                  <input type="text" class="form__input" placeholder="Name">
+                  <input type="email" class="form__input" placeholder="Email">
+                  <input type="tel" class="form__input" placeholder="Phone">
+                  <select class="form__input" name="form__sweets" id="form__sweets">
+                     <optgroup label="Cakes">
+                        <option value="l1">Napoleon</option>
+                        <option value="l2">Pumpking</option>
+                     </optgroup>
+                     <optgroup label="Sweets">
+                        <option value="r1">Cackes</option>
+                        <option value="r2">Sugar rush</option>
+                     </optgroup>
+                  </select>
                </div>
-               <div class="form__right">
-                  <div><input type="email" name="email" id="form-email-id" placeholder="Enter youremail" maxlength="40">
-                  </div>
-                  <div><select name="candies" id="form-list-id">
-                        <optgroup label="Cakes assortie">
-                           <option value="k1">Chocolate cake</option>
-                           <option value="k2">Pumpking cake</option>
-                           <option value="k3">Barries cake</option>
-                        </optgroup>
-                        <optgroup label="Sweets">
-                           <option value="s1">Cookies</option>
-                           <option value="s2">Nuggets</option>
-                           <option value="s3">Sugar rush</option>
-                        </optgroup>
-
-                     </select>
-                  </div>
-               </div>
-               <div class="form__button">
-                  <input type="button" value="Book now">
-               </div>
+               <button type="button" class="form__button" name="form-button">Book now</button>
             </form>
+            <!-- </div> -->
          </div>
          <img class="book-candie__img" src="./img/book-candie.jpg" alt="book-candie" srcset="">
 
@@ -348,7 +338,7 @@
          </div>
       </div>
    </div>
-
+   <!--  -->
    <script src="./js/index.js"></script>
    <script src="./js/carousel.js"></script>
 </body>
