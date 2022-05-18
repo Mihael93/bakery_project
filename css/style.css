@@ -5,26 +5,24 @@ body {
 }
 
 /* Front page */
-
 .front-page {
    background-image: url(../img/front-page.jpg);
-   height: 800px;
+   min-height: 750px;
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
 }
 
 /* Navigation */
-
 .front__nav {
-   font-size: 18px;
-   /* Разобраться с адаптивным размером */
+   font-size: 1.25em;
    font-family: sans-serif;
    font-weight: 500;
    background-color: rgb(56, 50, 50);
    display: flex;
-   flex-wrap: wrap;
    justify-content: space-around;
+   width: 100%;
 }
-
-/* Пояснить зачем это?! */
 
 .front__nav :after {
    content: "";
@@ -36,69 +34,73 @@ body {
    padding: 0;
    list-style-type: none;
    display: flex;
-   flex-wrap: wrap;
+   justify-content: space-around;
+   width: 40%;
+}
+
+.front__nav ul li {
+   line-height: 80px;
+   width: 30%;
+   padding: 0 5%;
+   align-self: stretch;
+   letter-spacing: 1px;
+   text-align: center;
 }
 
 .front__nav ul li a {
+   display: inline-block;
    text-decoration: none;
-   line-height: 80px;
-   padding: 0 40px;
-   letter-spacing: 1px;
    color: #f0f8ff;
 }
 
 /* label img */
-
-/* FIX POSITION WITH RELATIVE */
-
 .label-img {
    position: relative;
-   left: 48%;
+   left: 50%;
    top: 5%;
    transform: translate(-50%, -50%);
-   width: 120px;
+   width: 100px;
 }
 
 /* Front__info */
-
 .front__info {
    margin-top: 100px;
    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
    display: flex;
    justify-content: space-between;
+   align-items: center;
+   width: 100%;
 }
 
 .front__work-time {
    color: #ffffff;
    writing-mode: tb-rl;
    transform: rotate(180deg);
-   margin-left: 40px;
-   font-size: 14px;
-   font-weight: 500;
-   letter-spacing: 1px;
+   padding: 0 4%;
+   font-size: 0.85em;
+   letter-spacing: 1.5px;
 }
 
 .front__cook-name {
    color: #ffffff;
    text-align: center;
+   padding: 2%;
+   text-transform: uppercase;
+   /*width >?*/
 }
 
 .cook-first-name {
-   margin-top: 40px;
    letter-spacing: 0.5em;
-   text-transform: uppercase;
 }
 
 .cook-second-name {
-   font-size: 56px;
-   text-transform: uppercase;
+   font-size: 3em;
    margin: 20px;
 }
 
 .front__cook-separator {
    margin: 30px auto;
-   text-align: center;
    width: 100px;
    border: 3px solid #e8c300;
    border-radius: 3px;
@@ -106,21 +108,17 @@ body {
 
 .front__cook-buttons {
    display: flex;
-   flex-wrap: wrap;
    justify-content: center;
-   line-height: 60px;
-   text-transform: uppercase;
 }
-
-/* Get also :HOOVER */
 
 .front__cook-buttons a {
    text-decoration: none;
    letter-spacing: 1px;
    color: #f0f8ff;
+   display: inline-block;
+   line-height: 60px;
+   width: 100%;
 }
-
-/* Go on! */
 
 .front__cook-button-left,
 .front__cook-button-right {
@@ -130,12 +128,21 @@ body {
 }
 
 .front__cook-button-left {
-   background-color: #e8c300;
+   background-color: #e9c40c;
    border-radius: 5px;
+   transition: all 0.4s;
+   overflow: visible;
+}
+
+.front__cook-button-left:hover {
+   background-color: rgba(255, 170, 170, 0.8);
+   cursor: pointer;
 }
 
 .front__cook-button-right {
-   border: 1px solid rgba(236, 198, 198, 0.8);
+   border: 1px solid rgba(255, 170, 170, 0.8);
+   background-color: rgba(255, 255, 255, 0.4);
+   border-radius: 5px;
 }
 
 .front__socials {
@@ -143,12 +150,13 @@ body {
 }
 
 .front__socials div {
-   margin: 60px;
+   padding: 40px;
 }
 
-.skip-button {
-   position: relative;
-   left: 43.5%;
+.front__socials div a {
+   display: block;
+   width: 25px;
+   height: 25px;
 }
 
 /* ABOUT US */
@@ -200,7 +208,6 @@ body {
       font-size: 1em;
    }
 }
-
 
 .about-us__img {
    margin: 5%;

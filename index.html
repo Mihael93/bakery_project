@@ -7,7 +7,6 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" type="text/css" href="./css/normilize.css">
    <link rel="stylesheet" type="text/css" href="./css/style.css">
-   <!-- <link rel="stylesheet" href="./css/problem.css"> -->
    <title>My bakery site</title>
 </head>
 
@@ -17,16 +16,14 @@
       <!-- Navigation -->
       <nav class="front__nav">
          <ul>
-            <li class="left-item"><a href="">Home</a></li>
-            <li class="left-item"><a href="">About</a></li>
-            <li class="left-item"><a href="">Team</a></li>
-            <li class="left-item"><a href="">Menu</a></li>
+            <li class="left-item"><a id="scroll" href="#menu">Menu</a></li>
+            <li class="left-item"><a id="scroll" href="#about">About</a></li>
+            <li class="left-item"><a id="scroll" href="#team">Team</a></li>
          </ul>
          <ul>
-            <li class="right-item"><a href="">Specialities</a></li>
-            <li class="right-item"><a href="">Order</a></li>
-            <li class="right-item"><a href="">Photo</a></li>
-            <li class="right-item"><a href="">Contact</a></li>
+            <li class="right-item"><a id="scroll" href="#special">Specialities</a></li>
+            <li class="right-item"><a id="scroll" href="#photo">Photo</a></li>
+            <li class="right-item"><a id="scroll" href="#contact">Contact</a></li>
          </ul>
       </nav>
       <!-- Label -->
@@ -34,20 +31,18 @@
       <!-- Name -->
       <div class="front__info">
          <div class="front__work-time">
-            Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM
+            Mon - Fri: 8AM - 6PM, Sat - Sun: 10AM - 6PM
          </div>
          <div class="front__cook-name">
             <div class="cook-first-name">Кондитерская</div>
             <div class="cook-second-name">Домашние сладости</div>
             <hr class="front__cook-separator">
             <div class="front__cook-buttons">
-               <!-- <button class="front__cook-button-left">Сделать заказ</button>
-               <button class="front__cook-button-right">Обзор</button> -->
                <div class="front__cook-button-left">
-                  <a href="#">Сделать заказ</a>
+                  <a id="scroll" href="#fastbook">Сделать заказ</a>
                </div>
                <div class="front__cook-button-right">
-                  <a href="#">Обзор</a>
+                  <a id="scroll" href="#ps">Обзор</a>
                </div>
             </div>
          </div>
@@ -59,15 +54,13 @@
                <a href="#"><img src="./img/instagram_front.svg" alt="instagramm"></a>
             </div>
             <div>
-               <a href="#"><img src="./img/twitter_front.svg" alt="youtube"></a>
+               <a href="#"><img src="./img/twitter_front.svg" alt="twitter"></a>
             </div>
          </div>
       </div>
-      <!-- Skip button -->
-      <img src="./img/front_down-button.svg" alt="skip-button" class="skip-button">
    </div>
    <!-- ABOUT US -->
-   <div class="about-us">
+   <div class="about-us" id="about">
       <div class="about-us__section">
          <div class="about-us__info">
             <h2>About us</h2>
@@ -85,7 +78,7 @@
       </div>
    </div>
    <!--OUR TEAM -->
-   <div class="team">
+   <div class="team" id="team">
       <h3>Our team</h3>
       <div class="team__section">
          <img class="team__img" src="./img/team-img.jpg" alt="our team">
@@ -103,36 +96,36 @@
       </div>
    </div>
    <!-- BOOK A CANDIE -->
-   <div class="book-candie">
+   <div class="book-candie" id="fastbook">
       <div class="book-candie__section">
-            <!-- <div class="form-general"> -->
-            <form class="form__container" name="form-book" action="#">
-               <span>Fast book</span>
-               <hr class="book-candie__separator">
-               <div class="form__input-block">
-                  <input type="text" class="form__input" placeholder="Name">
-                  <input type="email" class="form__input" placeholder="Email">
-                  <input type="tel" class="form__input" placeholder="Phone">
-                  <select class="form__input" name="form__sweets" id="form__sweets">
-                     <optgroup label="Cakes">
-                        <option value="l1">Napoleon</option>
-                        <option value="l2">Pumpking</option>
-                     </optgroup>
-                     <optgroup label="Sweets">
-                        <option value="r1">Cackes</option>
-                        <option value="r2">Sugar rush</option>
-                     </optgroup>
-                  </select>
+         <!-- <div class="form-general"> -->
+         <form class="form__container" name="form-book" action="#">
+            <span>Fast book</span>
+            <hr class="book-candie__separator">
+            <div class="form__input-block">
+               <input type="text" class="form__input" placeholder="Name">
+               <input type="email" class="form__input" placeholder="Email">
+               <input type="tel" class="form__input" placeholder="Phone">
+               <select class="form__input" name="form__sweets" id="form__sweets">
+                  <optgroup label="Cakes">
+                     <option value="l1">Napoleon</option>
+                     <option value="l2">Pumpking</option>
+                  </optgroup>
+                  <optgroup label="Sweets">
+                     <option value="r1">Cackes</option>
+                     <option value="r2">Sugar rush</option>
+                  </optgroup>
+               </select>
                <button type="button" class="form__button" name="form-button">Book now</button>
-            </form>
-            <!-- </div> -->
-         </div>
-         <img class="book-candie__img" src="./img/book-candie.jpg" alt="book-candie" srcset="">
-
+         </form>
+         <!-- </div> -->
       </div>
+      <img class="book-candie__img" src="./img/book-candie.jpg" alt="book-candie" srcset="">
+
+   </div>
    </div>
    <!-- CAROUSEL CONTAINER -->
-   <div class="carousel-container-box">
+   <div class="carousel-container-box" id="special">
       <span class="carousel__specials">Specialities</span>
       <div class="carousel-container">
          <!-- Full-width images with number and caption text -->
@@ -188,7 +181,7 @@
    <!-- DELICIOUS MENU -->
    <div class="menu-wrapper">
       <div class="menu-wrapper-title">
-         <h2>Delicious Menu</h2>
+         <h2 id="menu" name="menu">Delicious Menu</h2>
          <hr class="separator menu-wrapper-separator">
          <p class="menu-wrapper-info">
             Main description - Lorem ipsum dolor sit amet consectetur adipisicing elit
@@ -312,7 +305,7 @@
       </div>
    </div>
    <!-- GALLERY FUN -->
-   <div class="gallery-fun">
+   <div class="gallery-fun" id="photo">
       <div class="gallery-fun__wrapper">
          <div class="gallery-fun__block">
             <div class="gallery-fun__block-1">
@@ -337,7 +330,7 @@
       </div>
    </div>
    <!-- CONTACT -->
-   <div class="form-contact">
+   <div class="form-contact" id="contact">
       <form action="#" class="contact__container" name="contact-us" method="post" id="contactform">
          <h3>Contact</h3>
          <hr class="contact__separator">
@@ -381,13 +374,14 @@
          </iframe>
       </div>
       <div class="footer__copyright">
-         <span>&copy; Copyright by JavaMich 2022</span>
+         <span id="ps">&copy; Copyright by JavaMich 2022</span>
       </div>
    </div>
 
-
+   <!-- Script connect -->
    <script src="./js/index.js"></script>
    <script src="./js/carousel.js"></script>
+   <script src="./js/tapscroll.js"></script>
 </body>
 
 </html>
