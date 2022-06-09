@@ -13,23 +13,60 @@ body {
    background-size: cover;
 }
 
+.front-page__burger {
+   display: none;
+}
+
 /* Navigation */
+
+.front-page__wrapper {
+   position: fixed;
+   top: 0;
+   z-index: 10;
+   width: 100%;
+   max-width: 1440px;
+}
+
+.front-page__wrapper::before {
+   content: "";
+   position: absolute;
+   height: 100%;
+   z-index: 2;
+}
+
+.front-page__body {
+   /* margin: 0 0 0 10px; */
+   background-color: rgba(85, 0, 0, 0.8);
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+   height: 40px;
+}
+
+@media all and (max-width: 790px) {
+   .front-page__body {
+      height: 35px;
+   }
+}
+
 .front__nav {
    font-size: 1.25em;
    font-family: sans-serif;
    font-weight: 500;
-   background-color: rgb(56, 50, 50);
+   background-color: rgba(85, 0, 0, 0.8);
    display: flex;
    justify-content: space-around;
+   align-items: center;
    width: 100%;
 }
 
-.front__nav :after {
-   content: "";
-   clear: both;
+@media all and (max-width: 1024px) {
+   .front__nav {
+      font-size: 1em;
+   }
 }
 
-.front__nav > ul {
+.front__nav ul {
    margin: 0;
    padding: 0;
    list-style-type: none;
@@ -39,32 +76,141 @@ body {
 }
 
 .front__nav ul li {
-   line-height: 80px;
+   text-transform: uppercase;
+   line-height: 45px;
    width: 30%;
    padding: 0 5%;
-   align-self: stretch;
    letter-spacing: 1px;
    text-align: center;
+   z-index: 5;
 }
+
+@media all and (max-width: 1024px) {
+   .front__nav ul li {
+      line-height: 30px;
+   }
+}
+
+/* @media all and (max-width: 769px) {
+   .front__nav ul li {
+      line-height: 25px;
+   }
+} */
 
 .front__nav ul li a {
    display: inline-block;
    text-decoration: none;
    color: #f0f8ff;
+   width: 100%;
 }
+
+.front__nav ul span {
+   color: #f0f8ff;
+   line-height: 40px;
+   z-index: 5;
+}
+
+@media all and (max-width: 1024px) {
+   .front__nav ul span {
+      line-height: 30px;
+   }
+}
+
+@media all and (max-width: 767px) {
+   .front-page__wrapper {
+      z-index: 15;
+   }
+   /* .label-img {
+      display: none;
+   } */
+   .front-page__burger {
+      display: flex;
+      align-self: center;
+      position: relative;
+      height: 20px;
+      width: 35px;
+      z-index: 3;
+      margin: 5px 0 5px 10px;
+   }
+   .front-page__burger::before,
+   .front-page__burger::after {
+      content: "";
+      background-color: #fff;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      transition: all 0.3s ease 0s;
+   }
+   .front-page__burger::before {
+      top: 0;
+   }
+   .front-page__burger::after {
+      bottom: 0;
+   }
+   .front-page__burger.active span {
+      display: none;
+   }
+   .front-page__burger.active::before {
+      transform: rotate(45deg);
+      top: 9px;
+   }
+   .front-page__burger.active::after {
+      transform: rotate(-45deg);
+      bottom: 9px;
+   }
+   .front-page__burger span {
+      position: absolute;
+      background-color: #fff;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      top: 9px;
+      transition: all 0.3s ease 0s;
+   }
+   .front__nav {
+      display: block;
+      position: fixed;
+      top: -100%;
+      left: 0;
+      overflow: auto;
+      transition: all 0.5s ease 0s;
+      background-color: rgb(73, 146, 122);
+   }
+   .front__nav.active {
+      top: 0;
+   }
+   .front__nav ul {
+      width: 50%;
+      display: block;
+      margin: 0 auto;
+   }
+   .front__nav ul li {
+      text-align: center;
+      margin: 0 auto;
+      width: 100%;
+   }
+   .front__nav ul span {
+      display: none;
+   }
+}
+
+/* END NAVIGATION BURGER */
 
 /* label img */
 .label-img {
    position: relative;
    left: 50%;
-   top: 5%;
+   margin-top: 100px;
    transform: translate(-50%, -50%);
    width: 100px;
+   z-index: 10;
 }
 
 /* Front__info */
 .front__info {
-   margin-top: 100px;
+   /* HERE WE GO AGAIN! */
+   padding: 100px 0;
    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
    display: flex;
@@ -72,6 +218,12 @@ body {
    align-items: center;
    width: 100%;
 }
+
+/* @media all and (max-width: 767px) {
+   .front__info {
+      padding-top: 300px;
+   }
+} */
 
 .front__work-time {
    color: #ffffff;
@@ -99,6 +251,13 @@ body {
    margin: 20px;
 }
 
+@media all and (max-width: 767px) {
+   .cook-second-name {
+      font-size: 2em;
+      margin: 10px 0;
+   }
+}
+
 .front__cook-separator {
    margin: 30px auto;
    width: 100px;
@@ -111,6 +270,12 @@ body {
    justify-content: center;
 }
 
+@media all and (max-width: 767px) {
+   .front__cook-buttons {
+      flex-wrap: wrap;
+   }
+}
+
 .front__cook-buttons a {
    text-decoration: none;
    letter-spacing: 1px;
@@ -120,11 +285,26 @@ body {
    width: 100%;
 }
 
+@media all and (max-width: 767px) {
+   .front__cook-buttons a {
+      line-height: 40px;
+   }
+}
+
 .front__cook-button-left,
 .front__cook-button-right {
    width: 200px;
    height: 60px;
    margin: 20px;
+}
+
+@media all and (max-width: 767px) {
+   .front__cook-button-left,
+   .front__cook-button-right {
+      width: 150px;
+      height: 40px;
+      margin: 10px;
+   }
 }
 
 .front__cook-button-left {
@@ -149,14 +329,33 @@ body {
    margin: 20px;
 }
 
+@media all and (max-width: 767px) {
+   .front__socials {
+      margin: 0;
+   }
+}
+
 .front__socials div {
    padding: 40px;
+}
+
+@media all and (max-width: 767px) {
+   .front__socials div {
+      padding: 30px 20px;
+   }
 }
 
 .front__socials div a {
    display: block;
    width: 25px;
    height: 25px;
+}
+
+@media all and (max-width: 767px) {
+   .front__socials div a {
+      width: 20px;
+      height: 20px;
+   }
 }
 
 /* ABOUT US */
@@ -478,10 +677,18 @@ body {
    color: #ffffff;
    display: block;
    text-align: center;
-   padding: 3% 0 3% 0;
+   padding: 4% 0 3% 0;
    text-transform: uppercase;
-   letter-spacing: 0.5em;
+   letter-spacing: 8px;
    font-family: sans-serif;
+   font-size: 1.5em;
+   font-style: italic;
+}
+
+@media all and (max-width: 1025px) {
+   .carousel__specials {
+      font-size: 1.25em;
+   }
 }
 
 /* Hide the images by default */

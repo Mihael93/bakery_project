@@ -11,44 +11,67 @@
 </head>
 
 <body>
-
-   <!-- CONTACT -->
-   <div class="form-contact">
-      <form action="#" class="contact__container" name="contact-us" method="post" id="contactform">
-         <h3>Contact</h3>
-         <hr class="contact__separator">
-         <span class="contact__descriptor">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore amet
-            eligendi, saepe molestiae eaque cumque, sit quos at nostrum quod autem necessitatibus unde beatae quae alias
-            rerum,
-            debitis voluptatibus totam.
-         </span>
-         <div class="contact__input-block">
-            <input type="text" name="name" id="" placeholder="Name" class="contact__input">
-            <input type="email" name="mail" id="" placeholder="Email" class="contact__input">
-            <input type="tel" name="phone" id="" placeholder="Phone" class="contact__input">
+   <!-- Front page -->
+   <div class="front-page">
+      <!-- Navigation -->
+      <div class="front-page__wrapper">
+         <div class="front-page__body">
+            <div class="front-page__burger">
+               <span></span>
+            </div>
+            <nav class="front__nav">
+               <ul>
+                  <li class="left-item"><a id="scroll" href="#menu">Menu</a></li>
+                  <span>|</span>
+                  <li class="left-item"><a id="scroll" href="#about">About</a></li>
+                  <span>|</span>
+                  <li class="left-item"><a id="scroll" href="#team">Team</a></li>
+               </ul>
+               <ul>
+                  <li class="right-item"><a id="scroll" href="#special">Special</a></li>
+                  <span>|</span>
+                  <li class="right-item"><a id="scroll" href="#photo">Galery</a></li>
+                  <span>|</span>
+                  <li class="right-item"><a id="scroll" href="#contact">Contacts</a></li>
+               </ul>
+            </nav>
          </div>
-         <textarea name="description" id="" placeholder="Message" class="contact__area" maxlength="500"></textarea>
-         <div class="contact__submit-block">
-            <span>
-               <img src="./img/svg/placeholder-map-pointer.svg"  alt="map-pointer"
-                  style="width: 20px; margin-right: 5px;">
-               Our adress: st.Pampam 25, UA
-            </span>
-            <span>
-               <img src="./img/svg/mobile-phone-app.svg" alt="phone-call" style="width: 20px; margin-right: 5px;">
-               +407293561821
-            </span>
-            <span>
-               <img src="./img/svg/mail-svg-1.svg" alt="mail-us" style="width: 20px; margin-right: 5px;">
-               office@gmail.com
-            </span>
-            <div class="button-block">
-               <button type="button" name="button" class="contact__button">Send message</button>
+      </div>
+      <!-- Label -->
+      <img src="./img/vector_label.svg" alt="shop-label" class="label-img">
+      <!-- Name -->
+      <div class="front__info">
+         <div class="front__work-time">
+            Mon - Fri: 8AM - 6PM, Sat - Sun: 10AM - 6PM
+         </div>
+         <div class="front__cook-name">
+            <div class="cook-first-name">Кондитерская</div>
+            <div class="cook-second-name">Домашние сладости</div>
+            <hr class="front__cook-separator">
+            <div class="front__cook-buttons">
+               <div class="front__cook-button-left">
+                  <a id="scroll" href="#fastbook">Сделать заказ</a>
+               </div>
+               <div class="front__cook-button-right">
+                  <a id="scroll" href="#ps">Обзор</a>
+               </div>
             </div>
          </div>
-      </form>
+         <div class="front__socials">
+            <div>
+               <a href="#"><img src="./img/facebook_front.svg" alt="facebook"></a>
+            </div>
+            <div>
+               <a href="#"><img src="./img/instagram_front.svg" alt="instagramm"></a>
+            </div>
+            <div>
+               <a href="#"><img src="./img/twitter_front.svg" alt="twitter"></a>
+            </div>
+         </div>
+      </div>
    </div>
 
+   <script src="./js/index.js"></script>
 </body>
 
 </html>

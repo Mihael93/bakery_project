@@ -14,18 +14,29 @@
    <!-- Front page -->
    <div class="front-page">
       <!-- Navigation -->
-      <nav class="front__nav">
-         <ul>
-            <li class="left-item"><a id="scroll" href="#menu">Menu</a></li>
-            <li class="left-item"><a id="scroll" href="#about">About</a></li>
-            <li class="left-item"><a id="scroll" href="#team">Team</a></li>
-         </ul>
-         <ul>
-            <li class="right-item"><a id="scroll" href="#special">Specialities</a></li>
-            <li class="right-item"><a id="scroll" href="#photo">Photo</a></li>
-            <li class="right-item"><a id="scroll" href="#contact">Contact</a></li>
-         </ul>
-      </nav>
+      <div class="front-page__wrapper">
+         <div class="front-page__body">
+            <div class="front-page__burger">
+               <span></span>
+            </div>
+            <nav class="front__nav">
+               <ul>
+                  <li class="left-item"><a id="scroll" href="#menu">Menu</a></li>
+                  <span>|</span>
+                  <li class="left-item"><a id="scroll" href="#about">About</a></li>
+                  <span>|</span>
+                  <li class="left-item"><a id="scroll" href="#team">Team</a></li>
+               </ul>
+               <ul>
+                  <li class="right-item"><a id="scroll" href="#special">Special</a></li>
+                  <span>|</span>
+                  <li class="right-item"><a id="scroll" href="#photo">Galery</a></li>
+                  <span>|</span>
+                  <li class="right-item"><a id="scroll" href="#contact">Contacts</a></li>
+               </ul>
+            </nav>
+         </div>
+      </div>
       <!-- Label -->
       <img src="./img/vector_label.svg" alt="shop-label" class="label-img">
       <!-- Name -->
@@ -179,9 +190,9 @@
       </div>
    </div>
    <!-- DELICIOUS MENU -->
-   <div class="menu-wrapper">
+   <div class="menu-wrapper" id="menu" name="menu">
       <div class="menu-wrapper-title">
-         <h2 id="menu" name="menu">Delicious Menu</h2>
+         <h2>Delicious Menu</h2>
          <hr class="separator menu-wrapper-separator">
          <p class="menu-wrapper-info">
             Main description - Lorem ipsum dolor sit amet consectetur adipisicing elit
